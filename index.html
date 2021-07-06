@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form lấy survey khách hàng</title>
+    <style>
+        body {
+            font-family: Tahoma;
+            letter-spacing: 1.4;
+            margin: 0 40px;
+        }
+
+        .font-bolder {
+            font-weight: bolder;
+        }
+
+        select {
+            width: 40%;
+        }
+
+
+
+        .font-normal {
+            font-weight: normal;
+        }
+
+        table {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        table {
+            margin-top: 30px;
+        }
+
+        .bnt {
+            width: 160px;
+            font-size: 18px;
+            padding-top: 8px;
+            margin: 30px 0 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--    header-->
+    <h1>Market Reserch Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey</p>
+    <hr>
+
+<!--question-->
+    <form action="">
+        <p class="font-bolder">what is your age range?</p>
+        <select name="old" id="">
+            <option value="18-24">18 - 24</option>
+            <option value="25-34">25 - 34</option>
+            <option value="35-50">35 - 50</option>
+            <option value="50+">50+</option>
+        </select>
+
+        <p class="font-bolder">What is your yearly income range?</p>
+        <select name="income" id="">
+            <option value="low">%0 - $25,000</option>
+            <option value="medium">$25,001 - $50,000</option>
+            <option value="high">$50,001 - $100,000</option>
+            <option value="very-high">$100,000+</option>
+        </select>
+<!--    Gender-->
+        <p class="font-bolder">Gender Identity</p>
+        <p class="font-normal"><input type="radio" name="male"> Male</p>
+        <p class="font-normal"><input type="radio" name="female"> Female</p>
+        <p class="font-normal"><input type="radio" name="nonbinary"> Nonbinary</p>
+        <p class="font-normal"><input type="radio" name="other"> Other</p>
+        <p class="font-normal"><input type="text" name="gender-other" placeholder="Maximum of 250 charaxters."></p>
+<!-- Time-->
+        <p class="font-bolder">Which of the following products have your purxhased in the last 2 months. Please check all that apply.</p>
+        <p class="font-normal"><input type="checkbox" name="product-1"> Product 1</p>
+        <p class="font-normal"><input type="checkbox" name="product-2"> Product 2</p>
+        <p class="font-normal" ><input type="checkbox" name="product-3"> Product 3</p>
+<!--often new product-->
+        <p class="font-bolder">How often would you use our new product?</p>
+        <p class="font-normal"><input type="radio" name="daily"> Daily</p>
+        <p class="font-normal"><input type="radio" name="weekly"> Weekly</p>
+        <p class="font-normal"><input type="radio" name="monthly"> Monthly</p>
+<!--Pay product-->
+        <p class="font-bolder">What would you pay for the new product?</p>
+        <p>$ <input type="text" name="dollars"> . <input type="text" name="cents"></p>
+        
+        <p class="font-bolder">What features would you like to see in the new product.</p>
+        <textarea name="features-user" id="" cols="120" rows="10"></textarea>
+
+        <table rules="all" frame="border" cellpadding="10">
+            <tr>
+                <th> </th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <td class="font-bolder text-left">Our products are priced fairly.</td>
+                <td>
+                    <input type="radio" name="1"><br>1
+                </td>
+                <td>
+                    <input type="radio" name="2"><br>2
+                </td>
+                <td>
+                    <input type="radio" name="3"><br>3
+                </td>
+                <td>
+                    <input type="radio" name="4"><br>4
+                </td>
+            </tr>
+            <tr>
+                <td class="font-bolder text-left">Our products are high quality.</td>
+                <td>
+                    <input type="radio" name="1"><br>1
+                </td>
+                <td>
+                    <input type="radio" name="2"><br>2
+                </td>
+                <td>
+                    <input type="radio" name="3"><br>3
+                </td>
+                <td>
+                    <input type="radio" name="4"><br>4
+                </td>
+            </tr>
+            <tr>
+                <td class="font-bolder text-left">You would recommend our product to a friend or coworder.</td>
+                <td>
+                    <input type="radio" name="1"><br>1
+                </td>
+                <td>
+                    <input type="radio" name="2"><br>2
+                </td>
+                <td>
+                    <input type="radio" name="3"><br>3
+                </td>
+                <td>
+                    <input type="radio" name="4"><br>4
+                </td>
+            </tr>
+        </table>
+
+        <input class="bnt" type="submit" name="submit">
+    </form>
+</body>
+</html>
